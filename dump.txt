@@ -1,0 +1,318 @@
+
+# Dicom-File-Format
+
+# Dicom-Meta-Information-Header
+# Used TransferSyntax: Little Endian Explicit
+(0002,0000) UL 212                                      #   4, 1 FileMetaInformationGroupLength
+(0002,0001) OB 00\01                                    #   2, 1 FileMetaInformationVersion
+(0002,0002) UI =MRImageStorage                          #  26, 1 MediaStorageSOPClassUID
+(0002,0003) UI [1.3.12.2.1107.5.2.43.67060.2018042313055670956302575] #  52, 1 MediaStorageSOPInstanceUID
+(0002,0010) UI =LittleEndianExplicit                    #  20, 1 TransferSyntaxUID
+(0002,0012) UI [1.2.276.0.7230010.3.0.3.6.0]            #  28, 1 ImplementationClassUID
+(0002,0013) SH [OFFIS_DCMTK_360]                        #  16, 1 ImplementationVersionName
+(0002,0016) AE [MRC35131]                               #   8, 1 SourceApplicationEntityTitle
+
+# Dicom-Data-Set
+# Used TransferSyntax: Little Endian Explicit
+(0008,0005) CS [ISO_IR 100]                             #  10, 1 SpecificCharacterSet
+(0008,0008) CS [ORIGINAL\PRIMARY\DIFFUSION\NONE\ND\MOSAIC] #  42, 6 ImageType
+(0008,0012) DA [20180423]                               #   8, 1 InstanceCreationDate
+(0008,0013) TM [132406.812000]                          #  14, 1 InstanceCreationTime
+(0008,0016) UI =MRImageStorage                          #  26, 1 SOPClassUID
+(0008,0018) UI [1.3.12.2.1107.5.2.43.67060.2018042313055670956302575] #  52, 1 SOPInstanceUID
+(0008,0020) DA [20180423]                               #   8, 1 StudyDate
+(0008,0021) DA [20180423]                               #   8, 1 SeriesDate
+(0008,0022) DA [20180423]                               #   8, 1 AcquisitionDate
+(0008,0023) DA [20180423]                               #   8, 1 ContentDate
+(0008,0030) TM [131734.756000]                          #  14, 1 StudyTime
+(0008,0031) TM [132406.808000]                          #  14, 1 SeriesTime
+(0008,0032) TM [130553.490000]                          #  14, 1 AcquisitionTime
+(0008,0033) TM [132406.812000]                          #  14, 1 ContentTime
+(0008,0050) SH (no value available)                     #   0, 0 AccessionNumber
+(0008,0060) CS [MR]                                     #   2, 1 Modality
+(0008,0070) LO [SIEMENS]                                #   8, 1 Manufacturer
+(0008,0080) LO [R]                                      #   2, 1 InstitutionName
+(0008,0081) ST [Medical Center Dr 5,Columbia,SC,US,29203] #  40, 1 InstitutionAddress
+(0008,0090) PN (no value available)                     #   0, 0 ReferringPhysicianName
+(0008,1010) SH [MRC35131]                               #   8, 1 StationName
+(0008,1030) LO [Research^Rorden_Prisma]                 #  22, 1 StudyDescription
+(0008,103e) LO [dti_nopf_x2_ortho]                      #  18, 1 SeriesDescription
+(0008,1040) LO [Radiology]                              #  10, 1 InstitutionalDepartmentName
+(0008,1050) PN (no value available)                     #   0, 0 PerformingPhysicianName
+(0008,1070) PN [RNC]                                    #   4, 1 OperatorsName
+(0008,1090) LO [Prisma_fit]                             #  10, 1 ManufacturerModelName
+(0008,1140) SQ (Sequence with explicit length #=3)      # 306, 1 ReferencedImageSequence
+  (fffe,e000) na (Item with explicit length #=2)          #  94, 1 Item
+    (0008,1150) UI =MRImageStorage                          #  26, 1 ReferencedSOPClassUID
+    (0008,1155) UI [1.3.12.2.1107.5.2.43.67060.2018042313024560060801190] #  52, 1 ReferencedSOPInstanceUID
+  (fffe,e00d) na (ItemDelimitationItem for re-encoding)   #   0, 0 ItemDelimitationItem
+  (fffe,e000) na (Item with explicit length #=2)          #  94, 1 Item
+    (0008,1150) UI =MRImageStorage                          #  26, 1 ReferencedSOPClassUID
+    (0008,1155) UI [1.3.12.2.1107.5.2.43.67060.2018042313024959805701193] #  52, 1 ReferencedSOPInstanceUID
+  (fffe,e00d) na (ItemDelimitationItem for re-encoding)   #   0, 0 ItemDelimitationItem
+  (fffe,e000) na (Item with explicit length #=2)          #  94, 1 Item
+    (0008,1150) UI =MRImageStorage                          #  26, 1 ReferencedSOPClassUID
+    (0008,1155) UI [1.3.12.2.1107.5.2.43.67060.2018042313024159688201187] #  52, 1 ReferencedSOPInstanceUID
+  (fffe,e00d) na (ItemDelimitationItem for re-encoding)   #   0, 0 ItemDelimitationItem
+(fffe,e0dd) na (SequenceDelimitationItem for re-encod.) #   0, 0 SequenceDelimitationItem
+(0008,2112) SQ (Sequence with explicit length #=36)     # 3670, 1 SourceImageSequence
+  (fffe,e000) na (Item with explicit length #=2)          #  94, 1 Item
+    (0008,1150) UI =MRImageStorage                          #  26, 1 ReferencedSOPClassUID
+    (0008,1155) UI [1.3.12.2.1107.5.2.43.67060.2018042313055126829402398] #  52, 1 ReferencedSOPInstanceUID
+  (fffe,e00d) na (ItemDelimitationItem for re-encoding)   #   0, 0 ItemDelimitationItem
+  (fffe,e000) na (Item with explicit length #=2)          #  94, 1 Item
+    (0008,1150) UI =MRImageStorage                          #  26, 1 ReferencedSOPClassUID
+    (0008,1155) UI [1.3.12.2.1107.5.2.43.67060.2018042313055141697702403] #  52, 1 ReferencedSOPInstanceUID
+  (fffe,e00d) na (ItemDelimitationItem for re-encoding)   #   0, 0 ItemDelimitationItem
+  (fffe,e000) na (Item with explicit length #=2)          #  94, 1 Item
+    (0008,1150) UI =MRImageStorage                          #  26, 1 ReferencedSOPClassUID
+    (0008,1155) UI [1.3.12.2.1107.5.2.43.67060.2018042313055150734102408] #  52, 1 ReferencedSOPInstanceUID
+  (fffe,e00d) na (ItemDelimitationItem for re-encoding)   #   0, 0 ItemDelimitationItem
+  (fffe,e000) na (Item with explicit length #=2)          #  94, 1 Item
+    (0008,1150) UI =MRImageStorage                          #  26, 1 ReferencedSOPClassUID
+    (0008,1155) UI [1.3.12.2.1107.5.2.43.67060.2018042313055173055902413] #  52, 1 ReferencedSOPInstanceUID
+  (fffe,e00d) na (ItemDelimitationItem for re-encoding)   #   0, 0 ItemDelimitationItem
+  (fffe,e000) na (Item with explicit length #=2)          #  94, 1 Item
+    (0008,1150) UI =MRImageStorage                          #  26, 1 ReferencedSOPClassUID
+    (0008,1155) UI [1.3.12.2.1107.5.2.43.67060.2018042313055188092802418] #  52, 1 ReferencedSOPInstanceUID
+  (fffe,e00d) na (ItemDelimitationItem for re-encoding)   #   0, 0 ItemDelimitationItem
+  (fffe,e000) na (Item with explicit length #=2)          #  94, 1 Item
+    (0008,1150) UI =MRImageStorage                          #  26, 1 ReferencedSOPClassUID
+    (0008,1155) UI [1.3.12.2.1107.5.2.43.67060.201804231305524305302423] #  52, 1 ReferencedSOPInstanceUID
+  (fffe,e00d) na (ItemDelimitationItem for re-encoding)   #   0, 0 ItemDelimitationItem
+  (fffe,e000) na (Item with explicit length #=2)          #  94, 1 Item
+    (0008,1150) UI =MRImageStorage                          #  26, 1 ReferencedSOPClassUID
+    (0008,1155) UI [1.3.12.2.1107.5.2.43.67060.2018042313055219396102428] #  52, 1 ReferencedSOPInstanceUID
+  (fffe,e00d) na (ItemDelimitationItem for re-encoding)   #   0, 0 ItemDelimitationItem
+  (fffe,e000) na (Item with explicit length #=2)          #  94, 1 Item
+    (0008,1150) UI =MRImageStorage                          #  26, 1 ReferencedSOPClassUID
+    (0008,1155) UI [1.3.12.2.1107.5.2.43.67060.2018042313055228433402433] #  52, 1 ReferencedSOPInstanceUID
+  (fffe,e00d) na (ItemDelimitationItem for re-encoding)   #   0, 0 ItemDelimitationItem
+  (fffe,e000) na (Item with explicit length #=2)          #  94, 1 Item
+    (0008,1150) UI =MRImageStorage                          #  26, 1 ReferencedSOPClassUID
+    (0008,1155) UI [1.3.12.2.1107.5.2.43.67060.2018042313055250743202438] #  52, 1 ReferencedSOPInstanceUID
+  (fffe,e00d) na (ItemDelimitationItem for re-encoding)   #   0, 0 ItemDelimitationItem
+  (fffe,e000) na (Item with explicit length #=2)          #  94, 1 Item
+    (0008,1150) UI =MRImageStorage                          #  26, 1 ReferencedSOPClassUID
+    (0008,1155) UI [1.3.12.2.1107.5.2.43.67060.2018042313055265610202443] #  52, 1 ReferencedSOPInstanceUID
+  (fffe,e00d) na (ItemDelimitationItem for re-encoding)   #   0, 0 ItemDelimitationItem
+  (fffe,e000) na (Item with explicit length #=2)          #  94, 1 Item
+    (0008,1150) UI =MRImageStorage                          #  26, 1 ReferencedSOPClassUID
+    (0008,1155) UI [1.3.12.2.1107.5.2.43.67060.2018042313055274732402448] #  52, 1 ReferencedSOPInstanceUID
+  (fffe,e00d) na (ItemDelimitationItem for re-encoding)   #   0, 0 ItemDelimitationItem
+  (fffe,e000) na (Item with explicit length #=2)          #  94, 1 Item
+    (0008,1150) UI =MRImageStorage                          #  26, 1 ReferencedSOPClassUID
+    (0008,1155) UI [1.3.12.2.1107.5.2.43.67060.2018042313055296977302453] #  52, 1 ReferencedSOPInstanceUID
+  (fffe,e00d) na (ItemDelimitationItem for re-encoding)   #   0, 0 ItemDelimitationItem
+  (fffe,e000) na (Item with explicit length #=2)          #  94, 1 Item
+    (0008,1150) UI =MRImageStorage                          #  26, 1 ReferencedSOPClassUID
+    (0008,1155) UI [1.3.12.2.1107.5.2.43.67060.2018042313055311899102458] #  52, 1 ReferencedSOPInstanceUID
+  (fffe,e00d) na (ItemDelimitationItem for re-encoding)   #   0, 0 ItemDelimitationItem
+  (fffe,e000) na (Item with explicit length #=2)          #  94, 1 Item
+    (0008,1150) UI =MRImageStorage                          #  26, 1 ReferencedSOPClassUID
+    (0008,1155) UI [1.3.12.2.1107.5.2.43.67060.2018042313055328261702463] #  52, 1 ReferencedSOPInstanceUID
+  (fffe,e00d) na (ItemDelimitationItem for re-encoding)   #   0, 0 ItemDelimitationItem
+  (fffe,e000) na (Item with explicit length #=2)          #  94, 1 Item
+    (0008,1150) UI =MRImageStorage                          #  26, 1 ReferencedSOPClassUID
+    (0008,1155) UI [1.3.12.2.1107.5.2.43.67060.2018042313055343340102468] #  52, 1 ReferencedSOPInstanceUID
+  (fffe,e00d) na (ItemDelimitationItem for re-encoding)   #   0, 0 ItemDelimitationItem
+  (fffe,e000) na (Item with explicit length #=2)          #  94, 1 Item
+    (0008,1150) UI =MRImageStorage                          #  26, 1 ReferencedSOPClassUID
+    (0008,1155) UI [1.3.12.2.1107.5.2.43.67060.2018042313055352468002473] #  52, 1 ReferencedSOPInstanceUID
+  (fffe,e00d) na (ItemDelimitationItem for re-encoding)   #   0, 0 ItemDelimitationItem
+  (fffe,e000) na (Item with explicit length #=2)          #  94, 1 Item
+    (0008,1150) UI =MRImageStorage                          #  26, 1 ReferencedSOPClassUID
+    (0008,1155) UI [1.3.12.2.1107.5.2.43.67060.2018042313055374617802478] #  52, 1 ReferencedSOPInstanceUID
+  (fffe,e00d) na (ItemDelimitationItem for re-encoding)   #   0, 0 ItemDelimitationItem
+  (fffe,e000) na (Item with explicit length #=2)          #  94, 1 Item
+    (0008,1150) UI =MRImageStorage                          #  26, 1 ReferencedSOPClassUID
+    (0008,1155) UI [1.3.12.2.1107.5.2.43.67060.2018042313055389685402483] #  52, 1 ReferencedSOPInstanceUID
+  (fffe,e00d) na (ItemDelimitationItem for re-encoding)   #   0, 0 ItemDelimitationItem
+  (fffe,e000) na (Item with explicit length #=2)          #  94, 1 Item
+    (0008,1150) UI =MRImageStorage                          #  26, 1 ReferencedSOPClassUID
+    (0008,1155) UI [1.3.12.2.1107.5.2.43.67060.2018042313055398722202488] #  52, 1 ReferencedSOPInstanceUID
+  (fffe,e00d) na (ItemDelimitationItem for re-encoding)   #   0, 0 ItemDelimitationItem
+  (fffe,e000) na (Item with explicit length #=2)          #  94, 1 Item
+    (0008,1150) UI =MRImageStorage                          #  26, 1 ReferencedSOPClassUID
+    (0008,1155) UI [1.3.12.2.1107.5.2.43.67060.2018042313055420959502494] #  52, 1 ReferencedSOPInstanceUID
+  (fffe,e00d) na (ItemDelimitationItem for re-encoding)   #   0, 0 ItemDelimitationItem
+  (fffe,e000) na (Item with explicit length #=2)          #  94, 1 Item
+    (0008,1150) UI =MRImageStorage                          #  26, 1 ReferencedSOPClassUID
+    (0008,1155) UI [1.3.12.2.1107.5.2.43.67060.2018042313055436051502499] #  52, 1 ReferencedSOPInstanceUID
+  (fffe,e00d) na (ItemDelimitationItem for re-encoding)   #   0, 0 ItemDelimitationItem
+  (fffe,e000) na (Item with explicit length #=2)          #  94, 1 Item
+    (0008,1150) UI =MRImageStorage                          #  26, 1 ReferencedSOPClassUID
+    (0008,1155) UI [1.3.12.2.1107.5.2.43.67060.2018042313055452303202504] #  52, 1 ReferencedSOPInstanceUID
+  (fffe,e00d) na (ItemDelimitationItem for re-encoding)   #   0, 0 ItemDelimitationItem
+  (fffe,e000) na (Item with explicit length #=2)          #  94, 1 Item
+    (0008,1150) UI =MRImageStorage                          #  26, 1 ReferencedSOPClassUID
+    (0008,1155) UI [1.3.12.2.1107.5.2.43.67060.2018042313055467330302509] #  52, 1 ReferencedSOPInstanceUID
+  (fffe,e00d) na (ItemDelimitationItem for re-encoding)   #   0, 0 ItemDelimitationItem
+  (fffe,e000) na (Item with explicit length #=2)          #  94, 1 Item
+    (0008,1150) UI =MRImageStorage                          #  26, 1 ReferencedSOPClassUID
+    (0008,1155) UI [1.3.12.2.1107.5.2.43.67060.2018042313055476410902514] #  52, 1 ReferencedSOPInstanceUID
+  (fffe,e00d) na (ItemDelimitationItem for re-encoding)   #   0, 0 ItemDelimitationItem
+  (fffe,e000) na (Item with explicit length #=2)          #  94, 1 Item
+    (0008,1150) UI =MRImageStorage                          #  26, 1 ReferencedSOPClassUID
+    (0008,1155) UI [1.3.12.2.1107.5.2.43.67060.2018042313055498677602519] #  52, 1 ReferencedSOPInstanceUID
+  (fffe,e00d) na (ItemDelimitationItem for re-encoding)   #   0, 0 ItemDelimitationItem
+  (fffe,e000) na (Item with explicit length #=2)          #  94, 1 Item
+    (0008,1150) UI =MRImageStorage                          #  26, 1 ReferencedSOPClassUID
+    (0008,1155) UI [1.3.12.2.1107.5.2.43.67060.2018042313055513725602524] #  52, 1 ReferencedSOPInstanceUID
+  (fffe,e00d) na (ItemDelimitationItem for re-encoding)   #   0, 0 ItemDelimitationItem
+  (fffe,e000) na (Item with explicit length #=2)          #  94, 1 Item
+    (0008,1150) UI =MRImageStorage                          #  26, 1 ReferencedSOPClassUID
+    (0008,1155) UI [1.3.12.2.1107.5.2.43.67060.2018042313055522746602529] #  52, 1 ReferencedSOPInstanceUID
+  (fffe,e00d) na (ItemDelimitationItem for re-encoding)   #   0, 0 ItemDelimitationItem
+  (fffe,e000) na (Item with explicit length #=2)          #  94, 1 Item
+    (0008,1150) UI =MRImageStorage                          #  26, 1 ReferencedSOPClassUID
+    (0008,1155) UI [1.3.12.2.1107.5.2.43.67060.2018042313055544975602534] #  52, 1 ReferencedSOPInstanceUID
+  (fffe,e00d) na (ItemDelimitationItem for re-encoding)   #   0, 0 ItemDelimitationItem
+  (fffe,e000) na (Item with explicit length #=2)          #  94, 1 Item
+    (0008,1150) UI =MRImageStorage                          #  26, 1 ReferencedSOPClassUID
+    (0008,1155) UI [1.3.12.2.1107.5.2.43.67060.2018042313055560035002539] #  52, 1 ReferencedSOPInstanceUID
+  (fffe,e00d) na (ItemDelimitationItem for re-encoding)   #   0, 0 ItemDelimitationItem
+  (fffe,e000) na (Item with explicit length #=2)          #  94, 1 Item
+    (0008,1150) UI =MRImageStorage                          #  26, 1 ReferencedSOPClassUID
+    (0008,1155) UI [1.3.12.2.1107.5.2.43.67060.2018042313055576233102544] #  52, 1 ReferencedSOPInstanceUID
+  (fffe,e00d) na (ItemDelimitationItem for re-encoding)   #   0, 0 ItemDelimitationItem
+  (fffe,e000) na (Item with explicit length #=2)          #  94, 1 Item
+    (0008,1150) UI =MRImageStorage                          #  26, 1 ReferencedSOPClassUID
+    (0008,1155) UI [1.3.12.2.1107.5.2.43.67060.2018042313055591157502549] #  52, 1 ReferencedSOPInstanceUID
+  (fffe,e00d) na (ItemDelimitationItem for re-encoding)   #   0, 0 ItemDelimitationItem
+  (fffe,e000) na (Item with explicit length #=2)          #  92, 1 Item
+    (0008,1150) UI =MRImageStorage                          #  26, 1 ReferencedSOPClassUID
+    (0008,1155) UI [1.3.12.2.1107.5.2.43.67060.20180423130556218202554] #  50, 1 ReferencedSOPInstanceUID
+  (fffe,e00d) na (ItemDelimitationItem for re-encoding)   #   0, 0 ItemDelimitationItem
+  (fffe,e000) na (Item with explicit length #=2)          #  94, 1 Item
+    (0008,1150) UI =MRImageStorage                          #  26, 1 ReferencedSOPClassUID
+    (0008,1155) UI [1.3.12.2.1107.5.2.43.67060.2018042313055622450202559] #  52, 1 ReferencedSOPInstanceUID
+  (fffe,e00d) na (ItemDelimitationItem for re-encoding)   #   0, 0 ItemDelimitationItem
+  (fffe,e000) na (Item with explicit length #=2)          #  94, 1 Item
+    (0008,1150) UI =MRImageStorage                          #  26, 1 ReferencedSOPClassUID
+    (0008,1155) UI [1.3.12.2.1107.5.2.43.67060.2018042313055637401202564] #  52, 1 ReferencedSOPInstanceUID
+  (fffe,e00d) na (ItemDelimitationItem for re-encoding)   #   0, 0 ItemDelimitationItem
+  (fffe,e000) na (Item with explicit length #=2)          #  94, 1 Item
+    (0008,1150) UI =MRImageStorage                          #  26, 1 ReferencedSOPClassUID
+    (0008,1155) UI [1.3.12.2.1107.5.2.43.67060.2018042313055646500702569] #  52, 1 ReferencedSOPInstanceUID
+  (fffe,e00d) na (ItemDelimitationItem for re-encoding)   #   0, 0 ItemDelimitationItem
+  (fffe,e000) na (Item with explicit length #=2)          #  94, 1 Item
+    (0008,1150) UI =MRImageStorage                          #  26, 1 ReferencedSOPClassUID
+    (0008,1155) UI [1.3.12.2.1107.5.2.43.67060.2018042313055670930902574] #  52, 1 ReferencedSOPInstanceUID
+  (fffe,e00d) na (ItemDelimitationItem for re-encoding)   #   0, 0 ItemDelimitationItem
+(fffe,e0dd) na (SequenceDelimitationItem for re-encod.) #   0, 0 SequenceDelimitationItem
+(0010,0010) PN [rordtest]                               #   8, 1 PatientName
+(0010,0020) LO [crlab]                                  #   6, 1 PatientID
+(0010,0030) DA [19720101]                               #   8, 1 PatientBirthDate
+(0010,0040) CS [M]                                      #   2, 1 PatientSex
+(0010,1010) AS [046Y]                                   #   4, 1 PatientAge
+(0010,1020) DS [1.8796037616667]                        #  16, 1 PatientSize
+(0010,1030) DS [79.3786748475]                          #  14, 1 PatientWeight
+(0018,0015) CS [BRAIN]                                  #   6, 1 BodyPartExamined
+(0018,0020) CS [EP]                                     #   2, 1 ScanningSequence
+(0018,0021) CS [SK\SP]                                  #   6, 2 SequenceVariant
+(0018,0022) CS [FS]                                     #   2, 1 ScanOptions
+(0018,0023) CS [2D]                                     #   2, 1 MRAcquisitionType
+(0018,0024) SH [*ep_b0]                                 #   6, 1 SequenceName
+(0018,0025) CS [N]                                      #   2, 1 AngioFlag
+(0018,0050) DS [3]                                      #   2, 1 SliceThickness
+(0018,0080) DS [5600]                                   #   4, 1 RepetitionTime
+(0018,0081) DS [79]                                     #   2, 1 EchoTime
+(0018,0083) DS [1]                                      #   2, 1 NumberOfAverages
+(0018,0084) DS [123.255705]                             #  10, 1 ImagingFrequency
+(0018,0085) SH [1H]                                     #   2, 1 ImagedNucleus
+(0018,0086) IS [1]                                      #   2, 1 EchoNumbers
+(0018,0087) DS [3]                                      #   2, 1 MagneticFieldStrength
+(0018,0088) DS [3]                                      #   2, 1 SpacingBetweenSlices
+(0018,0089) IS [71]                                     #   2, 1 NumberOfPhaseEncodingSteps
+(0018,0091) IS [35]                                     #   2, 1 EchoTrainLength
+(0018,0093) DS [100]                                    #   4, 1 PercentSampling
+(0018,0094) DS [100]                                    #   4, 1 PercentPhaseFieldOfView
+(0018,0095) DS [1335]                                   #   4, 1 PixelBandwidth
+(0018,1000) LO [67060]                                  #   6, 1 DeviceSerialNumber
+(0018,1020) LO [syngo MR D13D]                          #  14, 1 SoftwareVersions
+(0018,1030) LO [dti_nopf_x2_ortho]                      #  18, 1 ProtocolName
+(0018,1200) DA [20090304\20090304]                      #  18, 2 DateOfLastCalibration
+(0018,1201) TM [123723.000000\123723.000000]            #  28, 2 TimeOfLastCalibration
+(0018,1251) SH [Body]                                   #   4, 1 TransmitCoilName
+(0018,1310) US 72\0\0\72                                #   8, 4 AcquisitionMatrix
+(0018,1312) CS [COL]                                    #   4, 1 InPlanePhaseEncodingDirection
+(0018,1314) DS [90]                                     #   2, 1 FlipAngle
+(0018,1315) CS [N]                                      #   2, 1 VariableFlipAngleFlag
+(0018,1316) DS [0.17996784760073]                       #  16, 1 SAR
+(0018,1318) DS [0]                                      #   2, 1 dBdt
+(0018,5100) CS [HFS]                                    #   4, 1 PatientPosition
+(0019,0010) LO [SIEMENS MR HEADER]                      #  18, 1 PrivateCreator
+(0019,1008) CS [IMAGE NUM 4]                            #  12, 1 Unknown Tag & Data
+(0019,1009) LO [1.0]                                    #   4, 1 Unknown Tag & Data
+(0019,100a) US 36                                       #   2, 1 Unknown Tag & Data
+(0019,100b) DS [30]                                     #   2, 1 Unknown Tag & Data
+(0019,100c) IS [0]                                      #   2, 1 Unknown Tag & Data
+(0019,100d) CS [NONE]                                   #   4, 1 Unknown Tag & Data
+(0019,100f) SH (no value available)                     #   0, 0 Unknown Tag & Data
+(0019,1011) SH [No]                                     #   2, 1 Unknown Tag & Data
+(0019,1012) SL 0\0\-1250                                #  12, 3 Unknown Tag & Data
+(0019,1013) SL 0\0\-1250                                #  12, 3 Unknown Tag & Data
+(0019,1014) IS [0\0\0]                                  #   6, 3 Unknown Tag & Data
+(0019,1015) FD -648\-668.58111382000004\-56.131961820000001 #  24, 3 Unknown Tag & Data
+(0019,1016) DS [2.79]                                   #   4, 1 Unknown Tag & Data
+(0019,1017) DS [1]                                      #   2, 1 Unknown Tag & Data
+(0019,1018) IS [5200]                                   #   4, 1 Unknown Tag & Data
+(0019,1028) FD 29.869                                   #   8, 1 Unknown Tag & Data
+(0019,1029) FD 2790.000000009999894245993\0\2945.000000009999894245993\155... # 288,36 Unknown Tag & Data
+(0020,000d) UI [1.3.12.2.1107.5.2.43.67060.30000018040615393916400000125] #  56, 1 StudyInstanceUID
+(0020,000e) UI [1.3.12.2.1107.5.2.43.67060.2018042313053082502202372.0.0.0] #  58, 1 SeriesInstanceUID
+(0020,0010) SH [1]                                      #   2, 1 StudyID
+(0020,0011) IS [2]                                      #   2, 1 SeriesNumber
+(0020,0012) IS [1]                                      #   2, 1 AcquisitionNumber
+(0020,0013) IS [1]                                      #   2, 1 InstanceNumber
+(0020,0032) DS [-648\-668.58111381531\-56.13196182251]  #  38, 3 ImagePositionPatient
+(0020,0037) DS [1\0\0\0\1\0]                            #  12, 6 ImageOrientationPatient
+(0020,0052) UI [1.3.12.2.1107.5.2.43.67060.1.20180423131734898.0.0.0] #  52, 1 FrameOfReferenceUID
+(0020,1040) LO (no value available)                     #   0, 0 PositionReferenceIndicator
+(0020,1041) DS [-56.13196182251]                        #  16, 1 SliceLocation
+(0028,0002) US 1                                        #   2, 1 SamplesPerPixel
+(0028,0004) CS [MONOCHROME2]                            #  12, 1 PhotometricInterpretation
+(0028,0010) US 432                                      #   2, 1 Rows
+(0028,0011) US 432                                      #   2, 1 Columns
+(0028,0030) DS [3\3]                                    #   4, 2 PixelSpacing
+(0028,0100) US 16                                       #   2, 1 BitsAllocated
+(0028,0101) US 12                                       #   2, 1 BitsStored
+(0028,0102) US 11                                       #   2, 1 HighBit
+(0028,0103) US 0                                        #   2, 1 PixelRepresentation
+(0028,0106) US 0                                        #   2, 1 SmallestImagePixelValue
+(0028,0107) US 2248                                     #   2, 1 LargestImagePixelValue
+(0028,1050) DS [380]                                    #   4, 1 WindowCenter
+(0028,1051) DS [856]                                    #   4, 1 WindowWidth
+(0028,1055) LO [Algo1]                                  #   6, 1 WindowCenterWidthExplanation
+(0029,0010) LO [SIEMENS CSA HEADER]                     #  18, 1 PrivateCreator
+(0029,0011) LO [SIEMENS MEDCOM HEADER2]                 #  22, 1 PrivateCreator
+(0029,1008) CS [IMAGE NUM 4]                            #  12, 1 Unknown Tag & Data
+(0029,1009) LO [20180423]                               #   8, 1 Unknown Tag & Data
+(0029,1010) OB 53\56\31\30\04\03\02\01\64\00\00\00\4d\00\00\00\45\63\68\6f\4c\69... # 13080, 1 Unknown Tag & Data
+(0029,1018) CS [MR]                                     #   2, 1 Unknown Tag & Data
+(0029,1019) LO [20180423]                               #   8, 1 Unknown Tag & Data
+(0029,1020) OB 53\56\31\30\04\03\02\01\4b\00\00\00\4d\00\00\00\55\73\65\64\50\61... # 114924, 1 Unknown Tag & Data
+(0029,1160) LO [com]                                    #   4, 1 Unknown Tag & Data
+(0032,1060) LO [Research Rorden_Prisma]                 #  22, 1 RequestedProcedureDescription
+(0040,0244) DA [20180423]                               #   8, 1 PerformedProcedureStepStartDate
+(0040,0245) TM [131734.825000]                          #  14, 1 PerformedProcedureStepStartTime
+(0040,0253) SH [MR20180423131734]                       #  16, 1 PerformedProcedureStepID
+(0040,0254) LO [Research^Rorden_Prisma]                 #  22, 1 PerformedProcedureStepDescription
+(0040,0280) ST (no value available)                     #   0, 0 CommentsOnThePerformedProcedureStep
+(0051,0010) LO [SIEMENS MR HEADER]                      #  18, 1 PrivateCreator
+(0051,1008) CS [IMAGE NUM 4]                            #  12, 1 Unknown Tag & Data
+(0051,1009) LO [1.0]                                    #   4, 1 Unknown Tag & Data
+(0051,100a) LO [TA 00.03]                               #   8, 1 Unknown Tag & Data
+(0051,100b) LO [72*72]                                  #   6, 1 Unknown Tag & Data
+(0051,100c) LO [FoV 1296*1296]                          #  14, 1 Unknown Tag & Data
+(0051,100e) LO [Tra]                                    #   4, 1 Unknown Tag & Data
+(0051,100f) LO [HEA;HEP]                                #   8, 1 Unknown Tag & Data
+(0051,1011) LO [p2]                                     #   2, 1 Unknown Tag & Data
+(0051,1012) SH [TP 0]                                   #   4, 1 Unknown Tag & Data
+(0051,1013) SH [+LPH]                                   #   4, 1 Unknown Tag & Data
+(0051,1015) SH [R]                                      #   2, 1 Unknown Tag & Data
+(0051,1016) LO [p2 DIFFUSION/NONE/ND/MOSAIC]            #  28, 1 Unknown Tag & Data
+(0051,1017) SH [SL 3.0]                                 #   6, 1 Unknown Tag & Data
+(0051,1019) LO [A1/FS]                                  #   6, 1 Unknown Tag & Data
+(7fe0,0010) OW 0000\0001\0005\0002\0003\0003\0002\0000\0004\0003\0004\0004\0003... # 373248, 1 PixelData
